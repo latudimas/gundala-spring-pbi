@@ -31,6 +31,7 @@ public class EmployeeService {
 
     public List<Employee> addEmployee (Employee employee) {
         employees.add(employee);
+        // kasih status sukses bukan kasih return employee nya!!!
         return employees;
     }
 

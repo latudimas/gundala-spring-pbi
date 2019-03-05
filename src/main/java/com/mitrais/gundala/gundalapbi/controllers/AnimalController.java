@@ -2,12 +2,13 @@ package com.mitrais.gundala.gundalapbi.controllers;
 
 import com.mitrais.gundala.gundalapbi.services.AnimalServices;
 import com.mitrais.gundala.gundalapbi.models.Animal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("myanimal")
+@Controller
 public class AnimalController {
 
     private AnimalServices animalServices;
@@ -17,7 +18,9 @@ public class AnimalController {
     }
 
     @GetMapping()
-    public List<Animal> displayAllAnimal() {
-        return animalServices.showAllAnimal();
+    public String index (Model model) {
+        model.addAttribute("animal", "ayam");
+        return "index";
+//        return animalServices.showAllAnimal();
     }
 }

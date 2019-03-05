@@ -24,8 +24,15 @@ public class EmployeeApi {
         return employees;
     }
 
-    @PostMapping("add")
+    @GetMapping("{id}")
+    public List<Employee> getAllEmployeeById () {
+        List<Employee> employees = employeeService.getAll();
+        return employees;
+    }
+
+    @PostMapping
     public List<Employee> addEmployee (@RequestBody Employee params) {
+        // 201
         System.out.println("employeee111 " + params.getNip());
         List<Employee> emg = employeeService.addEmployee(params);
         return emg;
@@ -39,6 +46,7 @@ public class EmployeeApi {
 
     @DeleteMapping("{id}")
     public List<Employee> DeleteEmployee (@PathVariable String id) {
+        // 200
         List<Employee> emg = employeeService.DeleteEmployee(id);
         return emg;
     }
