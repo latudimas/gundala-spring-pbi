@@ -1,9 +1,7 @@
-package com.mitrais.gundala.gundalapbi.controller;
+package com.mitrais.gundala.gundalapbi.controllers;
 
-import com.mitrais.gundala.gundalapbi.AnimalServices;
-import com.mitrais.gundala.gundalapbi.model.Animal;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import com.mitrais.gundala.gundalapbi.services.AnimalServices;
+import com.mitrais.gundala.gundalapbi.models.Animal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

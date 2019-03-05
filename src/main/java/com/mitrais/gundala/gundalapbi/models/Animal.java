@@ -1,4 +1,4 @@
-package com.mitrais.gundala.gundalapbi.model;
+package com.mitrais.gundala.gundalapbi.models;
 
 public class Animal {
 

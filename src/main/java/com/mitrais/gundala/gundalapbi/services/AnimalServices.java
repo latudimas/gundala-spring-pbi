@@ -1,6 +1,6 @@
-package com.mitrais.gundala.gundalapbi;
+package com.mitrais.gundala.gundalapbi.services;
 
-import com.mitrais.gundala.gundalapbi.model.Animal;
+import com.mitrais.gundala.gundalapbi.models.Animal;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
